@@ -6,6 +6,7 @@ namespace Store
 {
     public interface IShoeRepository
     {
-        Shoe[] GetAllByTitle(string titlePart);
+        Shoe[] GetByArticle(string article);
+        Shoe[] GetAllByTitleOrCompanyName(string titleOrCompanyName);
     }
 }
